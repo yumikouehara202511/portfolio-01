@@ -62,14 +62,14 @@
           <div class="fill-label">Webサイト構造図 <span class="required">必須</span></div>
           <div class="fill-hint">トップページから下層ページまでの階層構造をツリー形式で記載</div>
           <div class="fill-content">
-            <p>（ツリー形式のサイト構造図を記載）</p>
+            <p>トップページ<br>├── サービス概要<br>│   ├── JINJIROとは<br>│   ├── 解決できる課題<br>│   └── 導入メリット<br>├── 機能紹介<br>│   ├── 人事データ一元管理<br>│   ├── ダッシュボード分析<br>│   ├── 勤怠管理<br>│   └── 評価管理<br>├── 導入事例<br>│   ├── 企業インタビュー<br>│   └── 活用事例<br>├── 料金プラン<br>├── 資料ダウンロード<br>├── お知らせ<br>└── お問い合わせ</p>
           </div>
         </div>
         <div class="fill-block">
           <div class="fill-label">Webアプリケーション構造図 <span class="required">必須</span></div>
           <div class="fill-hint">Spring Bootアプリケーションの画面構造をツリー形式で記載</div>
           <div class="fill-content">
-            <p>（ツリー形式のアプリ構造図を記載）</p>
+            <p>ログイン前<br>├── ログイン画面<br>│   ├── メールアドレス入力<br>│   ├── パスワード入力<br>│   └── ログイン実行<br>├── パスワード再設定画面<br>└── エラー画面<br><br>ログイン後<br>├── ダッシュボード<br>│   ├── 人事データサマリー<br>│   ├── 採用進捗サマリー<br>│   ├── 勤怠状況サマリー<br>│   ├── 評価状況サマリー<br>│   └── お知らせ一覧<br>├── 社員情報管理<br>│   ├── 社員一覧画面<br>│   ├── 社員詳細画面<br>│   ├── 社員登録画面<br>│   └── 社員編集画面<br>├── 採用情報管理<br>│   ├── 応募者一覧画面<br>│   ├── 応募者詳細画面<br>│   ├── 応募者登録画面<br>│   └── 応募者編集画面<br>├── 評価情報管理<br>│   ├── 評価一覧画面<br>│   ├── 評価詳細画面<br>│   ├── 評価登録画面<br>│   └── 評価編集画面<br>├── 勤怠情報管理<br>│   ├── 勤怠一覧画面<br>│   ├── 勤怠詳細画面<br>│   ├── 勤怠登録画面<br>│   └── 勤怠編集画面<br>├── 給与情報管理<br>│   ├── 給与一覧画面<br>│   ├── 給与詳細画面<br>│   ├── 給与登録画面<br>│   └── 給与編集画面<br>├── 検索<br>│   ├── 社員検索結果画面<br>│   ├── 採用検索結果画面<br>│   ├── 評価検索結果画面<br>│   └── 勤怠検索結果画面<br>├── レポート<br>│   ├── レポート一覧画面<br>│   └── レポート詳細画面<br>└── アカウント設定<br>    ├── プロフィール確認画面<br>    ├── パスワード変更画面<br>    └── ログアウト</p>
           </div>
         </div>
 
@@ -83,10 +83,14 @@
         <table class="doc-table">
           <thead><tr><th>No.</th><th>ページ名</th><th>ページの目的</th><th>主要コンテンツ</th></tr></thead>
           <tbody>
-          <tr class="template-row"><td>1</td><td>（トップページ）</td><td>（サービスの魅力を伝え、各ページへ誘導）</td><td>（ヒーロー、サービス紹介、CTA等）</td></tr>
-          <tr class="template-row"><td>2</td><td>（ページ名）</td><td>（目的を記載）</td><td>（コンテンツを記載）</td></tr>
-          <tr class="template-row"><td>3</td><td>（ページ名）</td><td>（目的を記載）</td><td>（コンテンツを記載）</td></tr>
-          <tr class="template-row"><td>…</td><td>…</td><td>…</td><td>…</td></tr>
+          <tr class="template-row"><td>1</td><td>トップページ</td><td>サービスの魅力を伝え、問い合わせや資料請求につなげる</td><td>キャッチコピー、サービス概要、主な機能、導入メリット、CTA</td></tr>
+          <tr class="template-row"><td>2</td><td>サービス概要</td><td>JINJIROがどのような課題を解決するサービスかを説明する</td><td>サービス説明、解決できる課題、対象ユーザー、導入メリット</td></tr>
+          <tr class="template-row"><td>3</td><td>機能紹介</td><td>提供機能を具体的に紹介し、利用イメージを持ってもらう</td><td>人事データ一元管理、ダッシュボード分析、勤怠管理、評価管理、給与管理</td></tr>
+          <tr class="template-row"><td>4</td><td>導入事例</td><td>導入後の活用イメージや効果を伝えて信頼感を高める</td><td>企業事例、活用シーン、導入効果、担当者コメント</td></tr>
+          <tr class="template-row"><td>5</td><td>料金プラン</td><td>料金体系を明確にし、検討しやすくする</td><td>料金プラン一覧、プランごとの機能比較、導入条件</td></tr>
+          <tr class="template-row"><td>6</td><td>資料ダウンロード</td><td>詳細情報を提供し、見込み顧客のリード獲得につなげる</td><td>ダウンロードフォーム、資料概要、掲載内容</td></tr>
+          <tr class="template-row"><td>7</td><td>お知らせ</td><td>最新情報やアップデート情報を発信する</td><td>新着情報、機能追加情報、セミナー案内</td></tr>
+          <tr class="template-row"><td>8</td><td>お問い合わせ</td><td>導入相談や質問を受け付ける</td><td>問い合わせフォーム、相談内容入力欄、連絡先情報</td></tr>
           </tbody>
         </table>
 
@@ -97,10 +101,16 @@
         <table class="doc-table">
           <thead><tr><th>No.</th><th>画面名</th><th>画面の目的</th><th>主要機能</th></tr></thead>
           <tbody>
-          <tr class="template-row"><td>1</td><td>（ログイン画面）</td><td>（ユーザー認証）</td><td>（メールアドレス/パスワード入力）</td></tr>
-          <tr class="template-row"><td>2</td><td>（一覧画面）</td><td>（データの一覧表示）</td><td>（検索・ソート・ページネーション）</td></tr>
-          <tr class="template-row"><td>3</td><td>（登録画面）</td><td>（新規データ登録）</td><td>（入力フォーム・バリデーション）</td></tr>
-          <tr class="template-row"><td>…</td><td>…</td><td>…</td><td>…</td></tr>
+          <tr class="template-row"><td>1</td><td>ログイン画面</td><td>ユーザー認証</td><td>メールアドレス入力、パスワード入力、ログイン処理</td></tr>
+          <tr class="template-row"><td>2</td><td>ダッシュボード画面</td><td>人事データの概要を確認する</td><td>人事データサマリー、勤怠状況、評価状況</td></tr>
+          <tr class="template-row"><td>3</td><td>社員一覧画面</td><td>社員情報を一覧表示する</td><td>検索、ソート、ページネーション</td></tr>
+          <tr class="template-row"><td>4</td><td>社員詳細画面</td><td>社員の詳細情報を確認する</td><td>社員プロフィール表示、評価履歴表示</td></tr>
+          <tr class="template-row"><td>5</td><td>社員登録画面</td><td>新しい社員情報を登録する</td><td>入力フォーム、バリデーション、登録処理</td></tr>
+          <tr class="template-row"><td>6</td><td>社員編集画面</td><td>社員情報を更新する</td><td>編集フォーム、更新処理</td></tr>
+          <tr class="template-row"><td>7</td><td>勤怠一覧画面</td><td>社員の勤怠データを確認する</td><td>勤怠一覧表示、検索、フィルター</td></tr>
+          <tr class="template-row"><td>8</td><td>評価管理画面</td><td>社員の評価情報を管理する</td><td>評価一覧表示、評価登録、評価編集</td></tr>
+          <tr class="template-row"><td>9</td><td>レポート画面</td><td>人事データを分析する</td><td>グラフ表示、レポート確認</td></tr>
+          <tr class="template-row"><td>10</td><td>アカウント設定画面</td><td>ユーザー情報を管理する</td><td>プロフィール編集、パスワード変更、ログアウト</td></tr>
           </tbody>
         </table>
 
@@ -114,14 +124,14 @@
           <div class="fill-label">メインシナリオ <span class="required">必須</span></div>
           <div class="fill-hint">ペルソナがサイトに訪問してから目的を達成するまでの動線（メインの行動パターン）</div>
           <div class="fill-content">
-            <p>（メインのユーザーフローを記載）</p>
+            <p>検索エンジンで「人事管理システム」「HRシステム」などを検索<br>→ JINJIROのトップページを訪問<br>→ サービス概要を確認<br>→ 機能紹介ページで人事データ管理・ダッシュボード機能を確認<br>→ 導入事例ページで他社の活用事例を確認<br>→ 料金プランページで導入コストを確認<br>→ 資料ダウンロードページでサービス資料を取得<br>→ 社内で共有し導入検討<br>→ 問い合わせフォームからデモ・相談を依頼</p>
           </div>
         </div>
         <div class="fill-block">
           <div class="fill-label">サブシナリオ <span class="optional">任意</span></div>
           <div class="fill-hint">その他の行動パターン（1〜2パターン）</div>
           <div class="fill-content">
-            <p>（サブシナリオを記載）</p>
+            <p>同僚や人事担当者からHRシステムの情報を聞く<br>→ SNS（LinkedIn・X）でHRツールの情報を検索<br>→ HRツール比較サイトの記事を閲覧<br>→ JINJIROのサービス紹介ページを訪問<br>→ 機能紹介ページで人事データ管理機能を確認<br>→ 導入事例ページで他社の活用事例を確認<br>→ 他のHRシステムと機能や料金を比較<br>→ 無料デモや資料ダウンロードを検討<br>→ 問い合わせページからサービス詳細を確認</p>
           </div>
         </div>
 
@@ -135,14 +145,58 @@
         <table class="doc-table">
           <thead><tr><th>URL</th><th>HTTPメソッド</th><th>画面/機能</th><th>説明</th></tr></thead>
           <tbody>
-          <tr class="template-row"><td>/</td><td>GET</td><td>トップページ</td><td>Webサイトのトップ</td></tr>
-          <tr class="template-row"><td>/about</td><td>GET</td><td>概要ページ</td><td>サービスの概要</td></tr>
-          <tr class="template-row"><td>/app/login</td><td>GET</td><td>ログイン画面</td><td>ログインフォーム表示</td></tr>
-          <tr class="template-row"><td>/app/login</td><td>POST</td><td>ログイン処理</td><td>認証処理</td></tr>
-          <tr class="template-row"><td>/app/items</td><td>GET</td><td>一覧画面</td><td>データ一覧表示</td></tr>
-          <tr class="template-row"><td>/app/items/new</td><td>GET</td><td>新規登録画面</td><td>登録フォーム表示</td></tr>
-          <tr class="template-row"><td>/app/items</td><td>POST</td><td>新規登録処理</td><td>データ保存</td></tr>
-          <tr class="template-row"><td>…</td><td>…</td><td>…</td><td>…</td></tr>
+          <tr class="template-row"><td>/</td><td>GET</td><td>トップページ</td><td>Webサイトのトップページを表示する</td></tr>
+          <tr class="template-row"><td>/about</td><td>GET</td><td>サービス概要ページ</td><td>JINJIROの概要や提供価値を紹介する</td></tr>
+          <tr class="template-row"><td>/features</td><td>GET</td><td>機能紹介ページ</td><td>主な機能や利用メリットを紹介する</td></tr>
+          <tr class="template-row"><td>/cases</td><td>GET</td><td>導入事例ページ</td><td>導入企業の事例や活用効果を紹介する</td></tr>
+          <tr class="template-row"><td>/pricing</td><td>GET</td><td>料金プランページ</td><td>料金体系やプラン内容を案内する</td></tr>
+          <tr class="template-row"><td>/documents</td><td>GET</td><td>資料ダウンロードページ</td><td>資料請求フォームを表示する</td></tr>
+          <tr class="template-row"><td>/documents</td><td>POST</td><td>資料請求処理</td><td>入力された資料請求情報を送信する</td></tr>
+          <tr class="template-row"><td>/contact</td><td>GET</td><td>お問い合わせページ</td><td>問い合わせフォームを表示する</td></tr>
+          <tr class="template-row"><td>/contact</td><td>POST</td><td>お問い合わせ送信処理</td><td>問い合わせ内容を送信する</td></tr>
+          <tr class="template-row"><td>/app/login</td><td>GET</td><td>ログイン画面</td><td>ログインフォームを表示する</td></tr>
+          <tr class="template-row"><td>/app/login</td><td>POST</td><td>ログイン処理</td><td>ユーザー認証を行う</td></tr>
+          <tr class="template-row"><td>/app/logout</td><td>POST</td><td>ログアウト処理</td><td>ログイン状態を終了する</td></tr>
+          <tr class="template-row"><td>/app/dashboard</td><td>GET</td><td>ダッシュボード画面</td><td>人事データの概要を表示する</td></tr>
+          <tr class="template-row"><td>/app/employees</td><td>GET</td><td>社員一覧画面</td><td>社員情報を一覧表示する</td></tr>
+          <tr class="template-row"><td>/app/employees/new</td><td>GET</td><td>社員登録画面</td><td>社員情報の登録フォームを表示する</td></tr>
+          <tr class="template-row"><td>/app/employees</td><td>POST</td><td>社員登録処理</td><td>新しい社員情報を保存する</td></tr>
+          <tr class="template-row"><td>/app/employees/{id}</td><td>GET</td><td>社員詳細画面</td><td>指定した社員の詳細情報を表示する</td></tr>
+          <tr class="template-row"><td>/app/employees/{id}/edit</td><td>GET</td><td>社員編集画面</td><td>社員情報の編集フォームを表示する</td></tr>
+          <tr class="template-row"><td>/app/employees/{id}</td><td>PUT</td><td>社員更新処理</td><td>指定した社員情報を更新する</td></tr>
+          <tr class="template-row"><td>/app/employees/{id}</td><td>DELETE</td><td>社員削除処理</td><td>指定した社員情報を削除する</td></tr>
+          <tr class="template-row"><td>/app/recruitments</td><td>GET</td><td>採用一覧画面</td><td>採用候補者情報を一覧表示する</td></tr>
+          <tr class="template-row"><td>/app/recruitments/new</td><td>GET</td><td>採用登録画面</td><td>採用情報の登録フォームを表示する</td></tr>
+          <tr class="template-row"><td>/app/recruitments</td><td>POST</td><td>採用登録処理</td><td>新しい採用情報を保存する</td></tr>
+          <tr class="template-row"><td>/app/recruitments/{id}</td><td>GET</td><td>採用詳細画面</td><td>指定した採用情報を表示する</td></tr>
+          <tr class="template-row"><td>/app/recruitments/{id}/edit</td><td>GET</td><td>採用編集画面</td><td>採用情報の編集フォームを表示する</td></tr>
+          <tr class="template-row"><td>/app/recruitments/{id}</td><td>PUT</td><td>採用更新処理</td><td>指定した採用情報を更新する</td></tr>
+          <tr class="template-row"><td>/app/recruitments/{id}</td><td>DELETE</td><td>採用削除処理</td><td>指定した採用情報を削除する</td></tr>
+          <tr class="template-row"><td>/app/evaluations</td><td>GET</td><td>評価一覧画面</td><td>評価情報を一覧表示する</td></tr>
+          <tr class="template-row"><td>/app/evaluations/new</td><td>GET</td><td>評価登録画面</td><td>評価情報の登録フォームを表示する</td></tr>
+          <tr class="template-row"><td>/app/evaluations</td><td>POST</td><td>評価登録処理</td><td>新しい評価情報を保存する</td></tr>
+          <tr class="template-row"><td>/app/evaluations/{id}</td><td>GET</td><td>評価詳細画面</td><td>指定した評価情報を表示する</td></tr>
+          <tr class="template-row"><td>/app/evaluations/{id}/edit</td><td>GET</td><td>評価編集画面</td><td>評価情報の編集フォームを表示する</td></tr>
+          <tr class="template-row"><td>/app/evaluations/{id}</td><td>PUT</td><td>評価更新処理</td><td>指定した評価情報を更新する</td></tr>
+          <tr class="template-row"><td>/app/evaluations/{id}</td><td>DELETE</td><td>評価削除処理</td><td>指定した評価情報を削除する</td></tr>
+          <tr class="template-row"><td>/app/attendances</td><td>GET</td><td>勤怠一覧画面</td><td>勤怠情報を一覧表示する</td></tr>
+          <tr class="template-row"><td>/app/attendances/new</td><td>GET</td><td>勤怠登録画面</td><td>勤怠情報の登録フォームを表示する</td></tr>
+          <tr class="template-row"><td>/app/attendances</td><td>POST</td><td>勤怠登録処理</td><td>新しい勤怠情報を保存する</td></tr>
+          <tr class="template-row"><td>/app/attendances/{id}</td><td>GET</td><td>勤怠詳細画面</td><td>指定した勤怠情報を表示する</td></tr>
+          <tr class="template-row"><td>/app/attendances/{id}/edit</td><td>GET</td><td>勤怠編集画面</td><td>勤怠情報の編集フォームを表示する</td></tr>
+          <tr class="template-row"><td>/app/attendances/{id}</td><td>PUT</td><td>勤怠更新処理</td><td>指定した勤怠情報を更新する</td></tr>
+          <tr class="template-row"><td>/app/attendances/{id}</td><td>DELETE</td><td>勤怠削除処理</td><td>指定した勤怠情報を削除する</td></tr>
+          <tr class="template-row"><td>/app/salaries</td><td>GET</td><td>給与一覧画面</td><td>給与情報を一覧表示する</td></tr>
+          <tr class="template-row"><td>/app/salaries/new</td><td>GET</td><td>給与登録画面</td><td>給与情報の登録フォームを表示する</td></tr>
+          <tr class="template-row"><td>/app/salaries</td><td>POST</td><td>給与登録処理</td><td>新しい給与情報を保存する</td></tr>
+          <tr class="template-row"><td>/app/salaries/{id}</td><td>GET</td><td>給与詳細画面</td><td>指定した給与情報を表示する</td></tr>
+          <tr class="template-row"><td>/app/salaries/{id}/edit</td><td>GET</td><td>給与編集画面</td><td>給与情報の編集フォームを表示する</td></tr>
+          <tr class="template-row"><td>/app/salaries/{id}</td><td>PUT</td><td>給与更新処理</td><td>指定した給与情報を更新する</td></tr>
+          <tr class="template-row"><td>/app/salaries/{id}</td><td>DELETE</td><td>給与削除処理</td><td>指定した給与情報を削除する</td></tr>
+          <tr class="template-row"><td>/app/reports</td><td>GET</td><td>レポート一覧画面</td><td>分析レポートを一覧表示する</td></tr>
+          <tr class="template-row"><td>/app/reports/{id}</td><td>GET</td><td>レポート詳細画面</td><td>指定したレポート内容を表示する</td></tr>
+          <tr class="template-row"><td>/app/account</td><td>GET</td><td>アカウント設定画面</td><td>ユーザー設定情報を表示する</td></tr>
+          <tr class="template-row"><td>/app/account</td><td>PUT</td><td>アカウント更新処理</td><td>プロフィールや設定情報を更新する</td></tr>
           </tbody>
         </table>
 
